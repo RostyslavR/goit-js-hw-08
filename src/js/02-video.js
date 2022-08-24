@@ -1,7 +1,7 @@
 import Player from '@vimeo/player';
 import throttle from 'lodash.throttle';
 
-STORAGE_KEY_PLAYER = 'videoplayer-current-time';
+const STORAGE_KEY_PLAYER = 'videoplayer-current-time';
 
 const refPlayer = document.querySelector('#vimeo-player');
 const player = new Player(refPlayer);

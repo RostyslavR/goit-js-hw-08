@@ -33,7 +33,7 @@ function saveToStorage(data) {
 }
 
 function restoreData(data) {
-  for (el in data) {
+  for (let el in data) {
     document.querySelector(`[name='${el}']`).value = data[el];
   }
 }
