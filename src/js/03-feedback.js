@@ -1,12 +1,12 @@
 import throttle from 'lodash.throttle';
 
 const STORAGE_KEY_DATA = 'feedback-form-state';
-const refform = document.querySelector('.feedback-form');
+const refForm = document.querySelector('.feedback-form');
 let formData = {};
 
 restoreFromStorage();
-refform.addEventListener('input', throttle(onFormInput, 500));
-refform.addEventListener('submit', onFormSubmit);
+refForm.addEventListener('input', throttle(onFormInput, 500));
+refForm.addEventListener('submit', onFormSubmit);
 
 function restoreFromStorage() {
   const savedData = localStorage.getItem(STORAGE_KEY_DATA);
